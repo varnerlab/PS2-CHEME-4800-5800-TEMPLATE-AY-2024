@@ -35,7 +35,7 @@ The public `application programming interface (API)` for part 1 of this problem 
 
 The `runme_part_1.jl` script builds the rules, runs the simulation, generates ECA images and saves the image of the last generation of each rule to the `myimages/twocolor` directory. The `testme_part_1.jl` script checks the validity of your image library against the expected images stored in the `testimages/twocolor` directory.
 
-For more information (and examples) describing two-color rule numbering and rule table construction, see [Chapter 3 of "A New Kind of Science," Wolfram S, 2002](https://cornell.box.com/s/10md9xuf184a6s3c25n6005uuia7da1e). The entire book is also accessible on the [Wolfram Science website](https://www.wolframscience.com/nks/).
+For more information (and examples) describing two-color rule numbering and rule table construction, see [Chapter 3 of "A New Kind of Science," Wolfram S, 2002](https://cornell.box.com/s/10md9xuf184a6s3c25n6005uuia7da1e). The book is also freely accessible on the [Wolfram Science website](https://www.wolframscience.com/nks/).
 
 ### Part 2: Three-Color ECA
 In `Part 2` of `PS2`, you will implement a program to compute rules `912, 1020, 1038, 1074, 1110, 1635, 1884, 2040` of three-color ECAs for `240` generations. In a three-color ECA, cells can be in one of three states: `0`, `1`, or `2` (which we map to `{white, gray, black}`). The program will visualize the last ECA generation (i.e., the `240th` generation) by writing images to the disk for each rule.
@@ -54,9 +54,9 @@ The public `application programming interface (API)` for part 2 of this problem 
             index::Int64 = 0, radius::Int64 = 3, levels::Int64 = 3)::MyOneDimensionalThreeColorElementaryRuleModel
     ```
 
-    The `build` method should return a `MyOneDimensionalThreeColorElementaryRuleModel` object with the given `index.` The `rule` field of the `MyOneDimensionalThreeColorElementaryRuleModel` object should be initialized with the rule table for the given `index.` The `radius` field of the `MyOneDimensionalThreeColorElementaryRuleModel` object should be initialized with the radius of the rule. If you need to add more fields to the `MyOneDimensionalThreeColorElementaryRuleModel` type, you can do so.
+   The `build` method should return a `MyOneDimensionalThreeColorElementaryRuleModel` object with the given `index.` The `rule` field of the `MyOneDimensionalThreeColorElementaryRuleModel` object should be initialized with the rule table for the given `index.` The `radius` field of the `MyOneDimensionalThreeColorElementaryRuleModel` object should be initialized with the radius of the rule. The `levels` argument is the number of states a cell can be in; in the case of a three-color ECA, the number of levels is `3`. If you need to add more fields to the `MyOneDimensionalThreeColorElementaryRuleModel` type, you can do so.
 
-3. Complete the implementation of the `simulation` function in the `src/Compute.jl` file, where this function has the signature:
+4. Complete the implementation of the `simulation` function in the `src/Compute.jl` file, where this function has the signature:
     ```julia
         function simulation(rulemodel::MyOneDimensionalThreeColorElementaryRuleModel,  initial::Array{Int64,1};  
             steps::Int64 = 10, background::Int64 = 1)::Dict{Int64, Array{Int64,2}}
@@ -65,4 +65,4 @@ The public `application programming interface (API)` for part 2 of this problem 
 
 The `runme_part_2.jl` script will build the rules, run the simulation, generate the three-color ECA images and save the image of the last generation to the `myimages/threecolor` directory. The `testme_part_2.jl` script will check the validity of your image library against the expected images stored in the `testimages/threecolor` directory.
 
-For more information (and examples) describing `three-color` rule numbering and rule table construction, see [Chapter 3 from "A New Kind of Science," Wolfram S, 2002](https://cornell.box.com/s/10md9xuf184a6s3c25n6005uuia7da1e). The entire book is accessible on the [Wolfram Science website](https://www.wolframscience.com/nks/).
+For more information (and examples) describing `three-color` rule numbering and rule table construction, see [Chapter 3 from "A New Kind of Science," Wolfram S, 2002](https://cornell.box.com/s/10md9xuf184a6s3c25n6005uuia7da1e). The book is freely accessible on the [Wolfram Science website](https://www.wolframscience.com/nks/).
