@@ -12,7 +12,7 @@ In `Part 1` of `PS2`, you will implement a program to compute all `256` two-colo
 The public `application programming interface (API)` for part 1 of this problem set consists of the following types and functions:
 1. Create the `MyOneDimensionalTwoColorElementaryRuleModel` type to represent a two-color ECA rule in the `src/Types.jl` file. `MyOneDimensionalTwoColorElementaryRuleModel` should be `mutable` and have three fields:       
     * The `index::Int` field holds the index of the rule (an integer between `0` and `255`)
-    * The `rule::Dict{Int, Int}` field holds the rule table (mapping between neighborhood and next state) and
+    * The `rule::Dict{Int, Int}` field holds the rule table (mapping between neighborhood and next state)
     * The `radius::Int` field holds the radius of the rule (how many cells are used to determine the state of the next cell; in the case of a two-color ECA, the radius is `3`).
 
 2. Create a `build` method in the `src/Factory.jl` file with the signature:
@@ -44,7 +44,7 @@ In `Part 2` of `PS2`, you will implement a program to compute rules `912, 1020, 
 The public `application programming interface (API)` for part 2 of this problem set consists of the following types and functions:
 1. Create the `MyOneDimensionalThreeColorElementaryRuleModel` type to represent a three-color ECA rule in the `src/Types.jl` file. `MyOneDimensionalThreeColorElementaryRuleModel` should be `mutable` and with at least these three fields:    
     * The `index::Int` field holds the index of the rule (an integer between `0` and `255`)
-    * The `rule::Dict{Int, Int}` field holds the rule table (mapping between neighborhood and next state) and
+    * The `rule::Dict{Int, Int}` field holds the rule table (mapping between neighborhood and next state)
     * The `radius::Int` field holds the radius of the rule (how many cells are used to determine the state of the next cell; in the case of a three-color ECA, the radius is `3`).
 
 2. Create a `build` method in the `src/Factory.jl` file with the signature:
