@@ -2,7 +2,7 @@
 The objective of `PS2` is to develop a program implemented in the [Julia programming language](https://julialang.org/downloads/) to compute `two-color` [Wolfram Elementary Cellular Automata (ECA)](https://en.wikipedia.org/wiki/Elementary_cellular_automaton).
 
 ## Background
-[Cellular automata (CA)](https://en.wikipedia.org/wiki/Cellular_automaton) are discrete mathematical models that consist of a grid of cells, each of which can be in one of a finite number of possible states. CAs are used to model many real-world systems, such as the spread of forest fires, the growth of plants, the behavior of traffic, the behavior of gases, and the behavior of the stock market.
+[Cellular automata (CA)](https://en.wikipedia.org/wiki/Cellular_automaton) are discrete computational models that consist of a grid of cells, each of which can be in one of a finite number of possible states. CAs are used to model many real-world systems, such as the spread of forest fires, the growth of plants, the behavior of traffic, the behavior of gases, and the behavior of the stock market.
 * [Stephen Wolfram](https://en.wikipedia.org/wiki/Stephen_Wolfram), a British-American computer scientist, mathematician, and physicist, studied a particular type of CA called the [Elementary Cellular Automata (ECA)](https://en.wikipedia.org/wiki/Elementary_cellular_automaton), which is a one-dimensional CA. The ECA consists of a line of cells in one of two states: `0` or `1`. The state of each cell is determined by the state of its two neighbors in the previous time step, according to a rule table. 
 
 The Worlfram book is accessible on the [Wolfram Science website](https://www.wolframscience.com/nks/).
