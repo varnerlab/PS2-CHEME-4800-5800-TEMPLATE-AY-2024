@@ -48,8 +48,8 @@ include("Include.jl")
         for i ∈ eachindex(rules)
 
             # load image from my image list -
-            my_image = load(joinpath(_PATH_TO_MY_IMAGES,"part-I-images", "R$(i)-F240.jpeg"));
-            my_test_image = load(joinpath(_PATH_TO_TEST_IMAGES, "part-I-images", "TEST_R$(i)-F240.jpeg"));
+            my_image = load(joinpath(_PATH_TO_MY_IMAGES,"twocolor", "R$(i)-F240.jpeg"));
+            my_test_image = load(joinpath(_PATH_TO_TEST_IMAGES, "twocolor", "TEST_R$(i)-F240.jpeg"));
             
             # test -
             @test my_image == my_test_image;
