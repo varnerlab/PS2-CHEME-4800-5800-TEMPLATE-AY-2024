@@ -2,11 +2,11 @@
 include("Include.jl")
 
 
-# ----------------------------------------------------------------------------------
+# ----------------------------------------------------------------------------------------------------------------- #
+# Let's write a unit test for each *public* function in our code!
 # for more information on tests, see: https://docs.julialang.org/en/v1/stdlib/Test/
-# ----------------------------------------------------------------------------------
-# Testset - let's write a unit test for each *public* function in our code!
-@testset verbose = true "PS2 Test Suite Part 1" begin
+# ----------------------------------------------------------------------------------------------------------------- #
+@testset verbose = true "PS2 Test Suite" begin
 
     @testset "Build MyOneDimensionalTwoColorElementaryRuleModel test" begin
         
@@ -48,8 +48,8 @@ include("Include.jl")
         for i ∈ eachindex(rules)
 
             # load image from my image list -
-            my_image = load(joinpath(_PATH_TO_MY_IMAGES,"twocolor", "R$(i)-F240.jpeg"));
-            my_test_image = load(joinpath(_PATH_TO_TEST_IMAGES, "twocolor", "TEST_R$(i)-F240.jpeg"));
+            my_image = load(joinpath(_PATH_TO_MY_IMAGES,"part-I-images", "R$(i)-F240.jpeg"));
+            my_test_image = load(joinpath(_PATH_TO_TEST_IMAGES, "part-I-images", "TEST_R$(i)-F240.jpeg"));
             
             # test -
             @test my_image == my_test_image;

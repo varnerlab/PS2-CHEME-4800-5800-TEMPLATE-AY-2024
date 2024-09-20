@@ -26,7 +26,7 @@ for i ∈ eachindex(rules)
     frames = simulation(rulemodel, initial, steps=number_of_steps, background=0);
     
     # # save the last frame to disk -
-    save(File{format"JPEG"}(joinpath(_PATH_TO_TEST_IMAGES, "twocolor", "TEST_R$(i)-F$(number_of_steps).jpeg")), 
+    save(File{format"JPEG"}(joinpath(_PATH_TO_TEST_IMAGES, "part-I-images", "R$(i)-F$(number_of_steps).jpeg")), 
          Gray.(1 .- frames[number_of_steps]));
 end
 # ----------------------------------------------------------------------------------------------------------------- #
