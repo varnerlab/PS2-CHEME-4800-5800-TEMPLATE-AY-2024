@@ -1,5 +1,5 @@
 # Problem Set 2 (PS2): Developing a System to Compute the Wolfram Elementary Cellular Automata
-The objective of `PS2` is to develop a program implemented in the [Julia programming language](https://julialang.org/downloads/) to compute `two-color` [Wolfram Elementary Cellular Automata (ECA)](https://en.wikipedia.org/wiki/Elementary_cellular_automaton), and then a modified version of the ECA called probabilistic two-color cellular automata (PCA).
+The objective of `PS2` is to develop a program implemented in the [Julia programming language](https://julialang.org/downloads/) to compute `two-color` [Wolfram Elementary Cellular Automata (ECA)](https://en.wikipedia.org/wiki/Elementary_cellular_automaton).
 
 ## Background
 [Cellular automata (CA)](https://en.wikipedia.org/wiki/Cellular_automaton) are discrete mathematical models that consist of a grid of cells, each of which can be in one of a finite number of possible states. CAs are used to model many real-world systems, such as the spread of forest fires, the growth of plants, the behavior of traffic, the behavior of gases, and the behavior of the stock market.
